@@ -23,7 +23,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: antiquewhite;
-	background-image: url('images/food-table.jpg');
+	background-image: url('../images/food-table.jpg');
 	background-repeat: no-repeat;
 	background-position: right;
 }
