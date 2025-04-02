@@ -1,0 +1,166 @@
+/* 
+_________   _________ _________ .____                                __   
+\_   ___ \ /   _____//   _____/ |    |   _____  ___.__. ____  __ ___/  |_ 
+/    \  \/ \_____  \ \_____  \  |    |   \__  \<   |  |/  _ \|  |  \   __\
+\     \____/        \/        \ |    |___ / __ \\___  (  <_> )  |  /|  |  
+ \______  /_______  /_______  / |_______ (____  / ____|\____/|____/ |__|  
+        \/        \/        \/          \/    \/\/                        
+ 
+*/
+
+/* Base reset */
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-background-color: rgba(254, 239, 219, 0.5);
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-color: antiquewhite;
+	background-image: url(/RTS/Beyond/opgaver/opskriftBloggen/images/food-table.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+img,
+video,
+svg {
+	max-width: 100%;
+}
+
+#container {
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+	gap: 10px;
+	padding: 10px;
+}
+
+/*Header and nav*/
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--primary-background-color);
+}
+
+header ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+header li {
+	list-style: none;
+	margin-left: 5px;
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+header h1 {
+	font-family: 'Pacifico', cursive;
+	font-weight: 100;
+}
+
+nav {
+	margin: 0;
+}
+
+nav a {
+	font-style: italic;
+}
+
+.line {
+	border: 2px solid black;
+	margin-top: 1.5rem;
+	width: 35%;
+}
+
+/*Main*/
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--primary-background-color);
+    height: 105vh;
+}
+
+main h2 {
+	font-family: 'Pacifico', cursive;
+	font-weight: 100;
+}
+
+#recipe-form div {
+	margin: 20px 0;
+}
+
+input {
+	border: none;
+	padding: 5px;
+	margin-right: 10px;
+	font-style: italic;
+}
+
+/*Buttons*/
+#delete-all {
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	margin-left: 25%;
+	box-shadow: 2px 2px 2px #bdbcbc;
+}
+
+#submit-recipe {
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	box-shadow: 2px 2px 2px #bdbcbc;
+}
+
+button {
+	border: none;
+	background-color: rgb(255, 250, 244);
+	padding: 5px 10px;
+	margin-right: 5px;
+	color: #757575;
+	font-style: italic;
+}
+
+button:active {
+	background-color: bisque;
+}
+
+/*Recipe card*/
+.recipe-item {
+	border: 3px solid rgb(255, 250, 244);
+	border-radius: 5px;
+	padding: 20px;
+	margin: 10px 0;
+	background-color: rgba(254, 239, 219, 0.7);
+}
+
+/*media queries*/
+
+@media (min-width: 768px) {
+	html,
+	body {
+		background-position: right;
+	}
+
+    #container {
+        width: 60%;
+    }
+
+}
